@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eton Email</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: #cccccc;
+        }
+        table{
+            border-spacing: 0;
+        }
+        tr{
+            padding: 2px 0;
+            /* display: inline-block; */
+        }
+       
+        .wrapper{
+           table-layout: fixed;
+           width: 100%;
+       }
+       .main{
+           width: 100%;
+           max-width: 600px;
+           margin: 0 auto;
+           background-color: #eaeaea;
+           font-family: 'Poppins', sans-serif;
+           color:  #585353;
+           border-spacing: 0;
+       }
+       .links{
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+            color:#383838 ;
+            /* border-bottom: 1px solid #383838; */
+            text-transform: uppercase;
+            font-weight: 500;
+            padding-bottom: 3px;
+            font-size: 13px;
+
+        }
+        .headline{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        .headline::first-letter{
+            font-size: 35px;
+
+        }
+        .tagline{
+            font-size: 15px;
+        }
+        .two-banners a{
+            margin: 10px;
+        }
+        .item table{
+            background-color: white;
+            display: inline-block;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        .item table img{
+            margin: 20px auto;
+        }
+        .item table #category{
+            padding: 4px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .item table #desc{
+            font-size: 13px;                                
+            margin-bottom: 15px; 
+            padding: 0 5px;
+        }
+        .item table b{
+            font-weight: 700;
+            font-size: 15px; 
+            margin-right: 20px;
+        }
+        .item table #discount{
+            background-color: #ffece3;
+            color: #d86533;  
+            font-weight: 600;
+            font-size: 15px;
+            padding: 5px;
+        }
+        .item table #shop-now{
+           font-family: 'Poppins', sans-serif;
+            display: block;
+            width: 50%;
+
+            /* background-color: #FF6A2B;  */
+            border: 1px solid #FF6A2B ;
+            color: #FF6A2B; 
+            text-decoration: none; 
+            padding: 10px;
+            margin: 15px auto;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 2px;
+        }
+        .social a{
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 10px;
+            color: #585353;
+            padding: 10px;
+        }
+
+
+       @media screen and (max-width: 600px){
+        .headline{
+            font-size: 25px;
+            text-transform: capitalize;
+        }
+        .links{
+            font-size: 12px;
+            margin: 0 10px 10px 10px;
+            padding-bottom: 2px;
+
+       }
+       .tagline{
+            font-size: 14px;
+            padding: 5px;
+        }
+       .tagline span{
+            font-size: 18px!important;
+        }
+        .two-banners a{
+            margin: 5px;
+        }
+        .item table #category{
+            padding: 2px;
+            font-size: 12px;
+        }
+        .item table #desc{
+            font-size: 10px;           
+            margin-bottom: 12px; 
+        }
+        .item table b{
+            font-size: 10px; 
+            margin-right: 0px;
+
+        }
+        .item table #discount{
+            font-size: 10px;
+            padding: 3px;
+        }
+        .item table #shop-now{
+            padding: 8px;
+            margin: 10px auto;
+            font-size: 10px;
+            border-radius: 2px;
+        }
+        .social a{
+            font-size: 15px;
+            margin: 2px;
+            padding: 5px;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <!-- <main>
+        <header>
+            <h2 class="headline">1st Food Shopping Site</h2>
+            <img src="./images/logo.jpg" alt="logo">
+        </header>
+        <div class="nav-links">
+            <a href="#">Vegetables</a>
+            <a href="#">Fruits</a>
+            <a href="#">Grains</a>
+            <a href="#">Powder/Flour</a>
+            <a href="#">Meat</a>
+            <a href="#">Supplier</a>
+        </div>
+        <section class="section-1">
+            <p>Shop for food items at <span>40%</span> the price in the regular market</p> 
+            <div class="article">  
+                
+                            
+                <a href="#">
+                    <div class="part-2">
+                        <img src="./images/gallery-1.jpeg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="part-3">
+                        <img src="./images/slide-4.jpg" alt="">
+                   </div>
+                </a>
+
+            </div>
+        </section>
+        
+        <section class="section-2">            
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="container">
+                    <img src="https://via.placeholder.com/1000X800" alt="" id="product">
+                    <p id="category">Food</p>
+                    <p id="desc">Save the stress and shop with us at your convenience</p>
+                    <div>
+                        <b>&#8358; <span id="price">4000.00</span></b>
+                        <span id="discount">- 50%</span>
+                    </div>
+                </div>
+            </a>
+            
+           
+        </section>
+        <footer>
+            <a href="#" target="_blank"><img src="https://via.placeholder.com/1200X800" alt=""></a>
+            <a href="#" target="_blank"><img src="https://via.placeholder.com/1200X800" alt=""></a>
+        </footer>
+
+    </main> -->
+    <center class="wrapper"> 
+        <table class="main" width="100%">
+
+            <!-- headline -->
+
+            <tr>
+                <td style="text-align: center; padding-top: 20px;">
+                    <h1 class="headline">1st food shopping site</h1>
+                </td>
+            </tr>
+
+            <!-- logo -->
+
+            <tr>
+                <td style="text-align: center; padding: 2px 0;">
+                    <a href="#"><img src="https://i.postimg.cc/7L8JMK99/logo.jpg" alt="logo" width="50"></a>
+                </td>
+            </tr>
+
+            <!-- nav-links -->
+
+            <tr style="text-align: center;">
+                <td style="padding: 5px 0;">
+                    <a href="#" class="links">Vegetables</a>
+                    <a href="#" class="links">Fruits</a>
+                    <a href="#" class="links">Grains</a>
+                    <a href="#" class="links">Powder/Flour</a>
+                    <a href="#" class="links">Meat</a>
+                    <a href="#" class="links">Supplier</a>
+                </td>
+            </tr>
+
+            <!--tagline -->
+
+            <tr>
+                <td style="text-align: center; padding: 5px 0;">
+                    <p class="tagline" style="color: #FF6A2B; font-weight: 700;">Shop for food items at <span style="color: #df3421;
+                        margin: 0 3px; font-size: 20px;">40%</span> the price in the regular market</p>
+                </td>
+            </tr>
+
+            <!-- one-banner -->
+
+            <tr class="one-banner">
+                <td  style="text-align: center; padding: 2px 0 10px;">
+                    <a href="#"><img src="https://i.postimg.cc/y8ZMjzR1/boxes-1834416-1920.jpg" alt="banner" width="70%" style="border-radius: 10px;"></a>                    
+                </td>
+            </tr>
+
+            <!-- two-banners -->
+            <tr class="two-banners">
+                <td  style="text-align: center;">
+                    <!-- <a href="#"><img src=" https://via.placeholder.com/300X350" alt="" width="45%" style="border-radius: 10px;"></a> -->
+                    <!-- <a href="#"><img src=" https://via.placeholder.com/300X350" alt="" width="45%" style="border-radius: 10px;"></a> -->
+
+
+
+
+                <!-- <td  style="text-align: center;">
+                    <a href="#"><img src="./images/gallery-1.jpeg" alt="" width="45%" style="border-radius: 10px;"></a>
+                    <a href="#"><img src="./images/gallery-1.jpeg" alt="" width="45%" style="border-radius: 10px;"></a>
+                </td> -->
+            </tr>
+
+            <!-- items to shop -->
+            
+            <tr style="text-align: center;">
+                <td class="item">
+                  <!-- beginning of item 1 -->
+                    <table  width="45%">
+                        <!-- image -->
+                       <tr >
+                            <td style="text-align: center;">
+                                <img src="https://i.postimg.cc/Qt6MPmQR/avocado-1838785-1920.jpg" alt="" style="width: 95%;">
+                            </td>          
+                        </tr>
+                        <tr >
+                            <td style="text-align: center;">
+                               <hr style="border: 1px solid #FF6A2B; width: 90%; margin: 0 auto;">
+                            </td>          
+                        </tr>
+                         <!-- category and description-->
+                        <tr style="text-align: center;">
+                            <td>
+                                <p id="category" >Food</p>
+                                <p id="desc">Save the stress and shop with us at your own convenience</p>
+                                <b>&#8358; <strong id="price">4000.00</strong></b>
+
+                                <strong id="discount">- 50%</strong>   
+
+                                <a href="#" id="shop-now" >shop now</a>                
+                            </td>
+                        </tr>  
+                    </table>  
+                  <!-- End of item 1 -->
+
+                  <table  width="45%">
+                    <!-- image -->
+                   <tr >
+                        <td style="text-align: center;">
+                            <img src="https://i.postimg.cc/Qt6MPmQR/avocado-1838785-1920.jpg" alt="" style="width: 95%;">
+                        </td>          
+                    </tr>
+                    <tr >
+                        <td style="text-align: center;">
+                           <hr style="border: 1px solid #FF6A2B; width: 90%; margin: 0 auto;">
+                        </td>          
+                    </tr>
+                     <!-- category and description-->
+                    <tr style="text-align: center;">
+                        <td>
+                            <p id="category" >Food</p>
+                            <p id="desc">Save the stress and shop with us at your own convenience</p>
+                            <b>&#8358; <strong id="price">4000.00</strong></b>
+
+                            <strong id="discount">- 50%</strong>   
+
+                            <a href="#" id="shop-now" >shop now</a>                
+                        </td>
+                    </tr>  
+                </table>  
+
+                <table  width="45%">
+                    <!-- image -->
+                   <tr >
+                        <td style="text-align: center;">
+                            <img src="https://i.postimg.cc/Qt6MPmQR/avocado-1838785-1920.jpg" alt="" style="width: 95%;">
+                        </td>          
+                    </tr>
+                    <tr >
+                        <td style="text-align: center;">
+                           <hr style="border: 1px solid #FF6A2B; width: 90%; margin: 0 auto;">
+                        </td>          
+                    </tr>
+                     <!-- category and description-->
+                    <tr style="text-align: center;">
+                        <td>
+                            <p id="category" >Food</p>
+                            <p id="desc">Save the stress and shop with us at your own convenience</p>
+                            <b>&#8358; <strong id="price">4000.00</strong></b>
+
+                            <strong id="discount">- 50%</strong>   
+
+                            <a href="#" id="shop-now" >shop now</a>                
+                        </td>
+                    </tr>  
+                </table>  
+
+                <table  width="45%">
+                    <!-- image -->
+                   <tr >
+                        <td style="text-align: center;">
+                            <img src="https://i.postimg.cc/Qt6MPmQR/avocado-1838785-1920.jpg" alt="" style="width: 95%;">
+                        </td>          
+                    </tr>
+                    <tr >
+                        <td style="text-align: center;">
+                           <hr style="border: 1px solid #FF6A2B; width: 90%; margin: 0 auto;">
+                        </td>          
+                    </tr>
+                     <!-- category and description-->
+                    <tr style="text-align: center;">
+                        <td>
+                            <p id="category" >Food</p>
+                            <p id="desc">Save the stress and shop with us at your own convenience</p>
+                            <b>&#8358; <strong id="price">4000.00</strong></b>
+
+                            <strong id="discount">- 50%</strong>   
+
+                            <a href="#" id="shop-now" >shop now</a>                
+                        </td>
+                    </tr>  
+                </table>  
+
+                <table  width="45%">
+                    <!-- image -->
+                   <tr >
+                        <td style="text-align: center;">
+                            <img src="https://i.postimg.cc/Qt6MPmQR/avocado-1838785-1920.jpg" alt="" style="width: 95%;">
+                        </td>          
+                    </tr>
+                    <tr >
+                        <td style="text-align: center;">
+                           <hr style="border: 1px solid #FF6A2B; width: 90%; margin: 0 auto;">
+                        </td>          
+                    </tr>
+                     <!-- category and description-->
+                    <tr style="text-align: center;">
+                        <td>
+                            <p id="category" >Food</p>
+                            <p id="desc">Save the stress and shop with us at your own convenience</p>
+                            <b>&#8358; <strong id="price">4000.00</strong></b>
+
+                            <strong id="discount">- 50%</strong>   
+
+                            <a href="#" id="shop-now" >shop now</a>                
+                        </td>
+                    </tr>  
+                </table>
+                   
+                </td>
+            </tr>
+
+            <!-- footer -->
+
+            <tr class="footer">                
+                <td  style="text-align: center; padding-top: 10px;">
+                    <a href="#"><img src="https://i.postimg.cc/XYkTmksm/supermarket-2384476-1920.jpg" alt="" width="65%" style="border-radius: 10px;"></a>
+                    <a href="#"><img src="https://i.postimg.cc/bvL3H6mY/groceries-1343141-1920.jpg" alt="" width="65%" style="border-radius: 10px;"></a>
+                </td>
+            </tr>
+        </table>
+
+    </center>
+</body>
+</html>
